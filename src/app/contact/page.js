@@ -8,7 +8,7 @@ export default function Contact() {
       <Navbar />
       <div className="m-12">
         <PageTitle title="contact" />
-        <PageContent />
+        <PageContent content="We look foward to hearing from you soon" />
       </div>
     </div>
   );
