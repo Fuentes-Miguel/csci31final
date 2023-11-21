@@ -1,4 +1,4 @@
-import { AcademicCapIcon } from "@heroicons/react/24/solid";
+import { TrophyIcon } from "@heroicons/react/24/solid";
 
 const menuItems = [
   {
@@ -10,30 +10,30 @@ const menuItems = [
     href: "/about",
   },
   {
-    title: "Contact",
-    href: "/contact",
+    title: "Interest",
+    href: "/interest",
   },
   {
-    title: "Services",
-    href: "/services",
+    title: "School",
+    href: "/school",
   },
   {
-    title: "Products",
-    href: "/products",
+    title: "Goals",
+    href: "/goals",
   },
 ];
 
 export default function Navbar() {
   return (
     <div className="flex justify-between gap-6 m-12 items-center">
-      <AcademicCapIcon className="h-12 w-12 text-emerald-100" />
+      <TrophyIcon className="h-12 w-12 text-gray-300" />
       <div className="flex gap-4">
         {menuItems.map((item, index) => (
           <a
             key={index}
             href={item.href}
-            className="px-4 py-2 bg-emerald-600 text-emerald-100
-             shadow-md rounded-md text-lg transition-all hover:bg-emerald-500 active:bg-emerald-400 "
+            className="px-4 py-2 bg-white text-black
+            shadow-md rounded-md text-lg transition-all hover:bg-gray-200 active:bg-gray-300"
           >
             {item.title}
           </a>

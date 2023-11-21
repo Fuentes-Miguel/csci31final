@@ -1,5 +1,10 @@
-const defaultContent = `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
+const defaultContent = `Hi there! I'm Miguel Fuentes, a student at Butte College pursuing an Associate in Arts for Transfer.
+Originally, I began my academic journey with interests in both Computer Science and Kinesiology.
+After exploring computer classes this semester, my passion for Kinesiology has grown significantly.
+My end goal is to work as an athletic trainer, blending my passion for fitness and helping others.
+My hobbies include working out, hiking, and biking, which align perfectly with my career aspirations.
+In 2025, I plan to transfer to Chico State to further my education.
+My ultimate goal is to earn a Bachelor's in Exercise Physiology followed by a Master's in Kinesiology.
 `;
 
 export default function PageContent({ content = defaultContent }) {
