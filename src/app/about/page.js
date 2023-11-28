@@ -2,7 +2,7 @@ import Image from "next/image";
 import Navbar from "../componets/Navbar";
 import PageTitle from "../componets/PageTitle";
 import PageContent from "../componets/PageContent";
-import CardForm from "../componets/cardform";
+import CardForm from "../componets/CardForm";
 
 export default function About() {
   return (
