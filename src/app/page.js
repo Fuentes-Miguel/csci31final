@@ -4,6 +4,7 @@ import PageTitle from "./componets/PageTitle";
 import PageContent from "./componets/PageContent";
 import Card from "./componets/Card";
 import { createClient } from "@supabase/supabase-js";
+import { findCards } from "./utils/supabase-client";
 
 // Create a single supabase client for interacting with your database
 const supabase = createClient(
@@ -14,7 +15,7 @@ const supabase = createClient(
 export const revalidate = 0;
 
 export default async function Home() {
-  const { data: cards, error } = await supabase.from("cards").select();
+  const cards = await findCards();
 
   return (
     <div>
