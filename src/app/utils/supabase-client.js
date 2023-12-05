@@ -10,7 +10,8 @@ export function getClient() {
 
 export async function insertCard(card) {
   const supabase = getClient();
-  const { error } = await supabase.from("countries").insert(card);
+  const { error } = await supabase.from("cards").insert(card);
+  console.log("error", error);
 }
 
 export async function findCards() {

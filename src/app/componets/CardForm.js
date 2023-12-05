@@ -1,10 +1,19 @@
 import Button from "./Button";
+import { redirect } from "next/navigation";
 import Field from "./Field";
 import Input from "./Input";
 import Label from "./Label";
-
+import { insertCard } from "../utils/supabase-client";
 async function createCard(formData) {
   "use server";
+  console.log("test");
+  const title = formData.get("title");
+  const subtitle = formData.get("subtitle");
+  const img = formData.get("img");
+  const description = formData.get("description");
+  insertCard({ title, subtitle, img, description });
+  insertCard(formData);
+  redirect("/");
   // get each field out of formData
   // call supabase-client insertCard
 }
@@ -18,7 +27,7 @@ export default function CardForm() {
       </Field>
       <Field>
         <Label label="subtitle" />
-        <Input id="subtitle" name="title" />
+        <Input id="subtitle" name="subtitle" />
       </Field>
       <Field>
         <Label label="image" />
