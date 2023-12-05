@@ -9,9 +9,9 @@ async function createCard(formData) {
   console.log("test");
   const title = formData.get("title");
   const subtitle = formData.get("subtitle");
-  const img = formData.get("img");
+  const image = formData.get("image");
   const description = formData.get("description");
-  insertCard({ title, subtitle, img, description });
+  insertCard({ title, subtitle, image, description });
   insertCard(formData);
   redirect("/");
   // get each field out of formData

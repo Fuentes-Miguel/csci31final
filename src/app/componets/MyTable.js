@@ -6,7 +6,7 @@ const defaultColumns = [
     key: "title",
   },
   {
-    title: "subtitle",
+    title: "Subtitle",
     key: "subtitle",
   },
   {
@@ -28,25 +28,27 @@ const defaultRecords = [
 ];
 
 export default function MyTable({
-  column = defaultColumns,
+  columns = defaultColumns,
   records = defaultRecords,
 }) {
   return (
     <Table.Root>
       <Table.Header>
         <Table.Row>
-          {column.map((column) => (
-            <Table.ColumnHeaderCell>{column.title}</Table.ColumnHeaderCell>
+          {columns.map((column) => (
+            <Table.ColumnHeaderCell key={column.key}>
+              {column.title}
+            </Table.ColumnHeaderCell>
           ))}
         </Table.Row>
       </Table.Header>
 
       <Table.Body>
-        {records.map((record) => (
-          <Table.Row>
-            {column.map((column) => record[column.key])}
+        {records.map((record, index) => (
+          <Table.Row key={index}>
+            {columns.map((column) => record[column.key])}
             <Table.RowHeaderCell>Danilo Sousa</Table.RowHeaderCell>
-            <Table.Cell>danilo@example.com</Table.Cell>
+            <Table.Cell key={columns.key}>danilo@example.com</Table.Cell>
             <Table.Cell>Developer</Table.Cell>
           </Table.Row>
         ))}
