@@ -4,7 +4,7 @@ After exploring computer classes this semester, my passion for Kinesiology has g
 My end goal is to work as an athletic trainer, blending my passion for fitness and helping others.
 My hobbies include working out, hiking, and biking, which align perfectly with my career aspirations.
 In 2025, I plan to transfer to Chico State to further my education.
-My ultimate goal is to earn a Bachelor's in Exercise Physiology followed by a Master's in Kinesiology.
+My ultimate goal is to earn a Bachelor's in Exercise Physiology followed by enrolling in a Master's Program in Athletic Training.
 `;
 
 export default function PageContent({ content = defaultContent }) {

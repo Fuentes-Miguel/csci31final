@@ -20,10 +20,10 @@ const defaultColumns = [
 ];
 const defaultRecords = [
   {
-    title: "test",
-    subtitle: "test",
-    image: "test",
-    description: "test",
+    title: "My Website",
+    subtitle: "",
+    image: "",
+    description: "",
   },
 ];
 
@@ -47,9 +47,9 @@ export default function MyTable({
         {records.map((record, index) => (
           <Table.Row key={index}>
             {columns.map((column) => record[column.key])}
-            <Table.RowHeaderCell>Danilo Sousa</Table.RowHeaderCell>
-            <Table.Cell key={columns.key}>danilo@example.com</Table.Cell>
-            <Table.Cell>Developer</Table.Cell>
+            <Table.RowHeaderCell>About ME </Table.RowHeaderCell>
+            <Table.Cell key={columns.key}>Gym</Table.Cell>
+            <Table.Cell>Goals</Table.Cell>
           </Table.Row>
         ))}
       </Table.Body>
