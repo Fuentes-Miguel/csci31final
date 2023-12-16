@@ -1,8 +1,12 @@
+// next.config.js
+
 /**
  * @type {import('next').NextConfig}
  */
 const nextConfig = {
-  /* config options here */
+  images: {
+    domains: ["www.8newsnow.com", "i.ytimg.com"],
+  },
 };
 
 module.exports = nextConfig;

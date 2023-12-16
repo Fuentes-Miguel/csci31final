@@ -9,8 +9,28 @@ export default function School() {
       <div className="m-12">
         <PageTitle title="Education Journey" />
 
+        {/* Butte College Section */}
+        <div className="mb-8 hover:scale-105 transition-transform cursor-pointer grow">
+          <h2 className="text-2xl font-bold mb-2 text-white">
+            Associate Degree in Kinesiology
+          </h2>
+          <div className="flex flex-col md:flex-row items-center">
+            <div className="md:w-1/2 mr-4">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/en/9/9c/Butte_College.png"
+                alt="Butte College "
+                width={300}
+                height={200}
+              />
+            </div>
+            <div className="md:w-1/2">
+              <PageContent content="Beginning my educational journey at Butte College, I'm laying the groundwork for my academic pursuits. It's where I'm taking the initial steps towards my goal." />
+            </div>
+          </div>
+        </div>
+
         {/* Chico State Section */}
-        <div className="mb-8">
+        <div className="mb-8 hover:scale-105 transition-transform cursor-pointer grow">
           <h2 className="text-2xl font-bold mb-2 text-white">
             Bachelor of Science in Exercise Physiology
           </h2>
@@ -18,19 +38,19 @@ export default function School() {
             <div className="md:w-1/2 mr-4">
               <img
                 src="https://www.csuchico.edu/style-guide/visual/_images/institutional-wildcat.jpg"
-                alt="Chico State Placeholder"
+                alt="Chico State "
                 width={300}
                 height={200}
               />
             </div>
             <div className="md:w-1/2">
-              <PageContent content="Starting my studies at Butte College marks the beginning of my educational path. I'm excited about my plans for 2025, moving to Chico State to focus on Exercise Physiology. It's the first step toward my dream." />
+              <PageContent content="I'm excited about my plans for 2025, moving to Chico State to focus on Exercise Physiology." />
             </div>
           </div>
         </div>
 
         {/* Masters Program Section */}
-        <div className="mb-8">
+        <div className="mb-8 hover:scale-105 transition-transform cursor-pointer grow">
           <h2 className="text-2xl font-bold mb-2 text-white">
             Master of Science in Athletic Training
           </h2>
@@ -38,7 +58,7 @@ export default function School() {
             <div className="md:w-1/2 mr-4">
               <img
                 src="https://upload.wikimedia.org/wikipedia/en/thumb/b/bb/University_of_the_Pacific_seal.svg/1200px-University_of_the_Pacific_seal.svg.png"
-                alt="Masters Program Placeholder"
+                alt="Masters Program "
                 width={300}
                 height={200}
               />

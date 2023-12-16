@@ -5,7 +5,6 @@ import PageContent from "../componets/PageContent";
 import Card from "../componets/Card";
 
 const Interest = () => {
-  // Sample data for cards (replace this with your actual data)
   const cardData = [
     {
       image:
@@ -29,7 +28,7 @@ const Interest = () => {
   return (
     <div>
       <Navbar />
-      <div className="m-12">
+      <div className="m-12 mt-6">
         <PageTitle title="Interest" />
         <PageContent content="Some of my interest include hiking, biking, and working out. " />
 

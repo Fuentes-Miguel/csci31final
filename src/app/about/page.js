@@ -11,7 +11,7 @@ export default function About() {
     <div>
       <Navbar />
       <div className="m-12">
-        <PageTitle title="about" />
+        <PageTitle title="About" />
         <PageContent
           content="My interest in computer science sparked early, but I wasn't allowed much exposure. Growing up, my parents restricted our screen time, pushing us to spend more hours outdoors than in front of TVs or computers. While I initially disliked it, I now appreciate the healthy lifestyle they instilled in me, and because of that i developed a love for the outdoors.
  My fascination with fitness began when I lost 83 lbs. After spine and knee surgery, I delved into rehabilitation during physical therapy. The various recovery tools like sensory deprivation tanks, cryotherapy, cupping, acupuncture caught my attention.
