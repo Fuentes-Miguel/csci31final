@@ -24,9 +24,9 @@ export default function Goals() {
               Professional Athletes
             </h2>
             <p className="text-white">
-              I aspire to be an athletic trainer in the NFL. While I don't have
-              a specific team preference, the opportunity to work in the NFL
-              would be amazing.
+              {
+                "I aspire to be an athletic trainer in the NFL. While I don't have a specific team preference, the opportunity to work in the NFL would be amazing."
+              }
             </p>
           </div>
 
@@ -42,10 +42,9 @@ export default function Goals() {
               College Athletes
             </h2>
             <p className="text-white">
-              While securing a role in the NFL would be fantastic, I'm also open
-              to contributing my skills to renowned Division 1 schools like the
-              Michigan Wolverines and other prominent football programs, such as
-              Alabama, Ohio State, etc..
+              {
+                "While securing a role in the NFL would be fantastic, I'm also open to contributing my skills to renowned Division 1 schools like the Michigan Wolverines and other prominent football programs, such as Alabama, Ohio State, etc.."
+              }
             </p>
           </div>
         </div>
